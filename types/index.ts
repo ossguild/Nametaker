@@ -3,4 +3,7 @@ export interface Contributor {
     emoji: string;
     favoriteQuote: string;
     twitterUrl: string;
+    githubUrl: string;
+    githubUsername: string;
+    imgurLink: string;
 }
