@@ -25,6 +25,12 @@ const contributors: Contributor[] = [
     favoriteQuote: "exploring the world of open source",
     twitterUrl: "https://twitter.com/mave_da_dev",
   },
+  {
+    name: "Guilherme Orcezi",
+    emoji: "✌",
+    favoriteQuote: "React is life",
+    twitterUrl: "https://twitter.com/rocketseat",
+  },
 ];
 
 export default contributors;
