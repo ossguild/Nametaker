@@ -17,6 +17,8 @@ Before you begin, make sure you have the following:
 
 ### How to Contribute
 
+0. Star the Repo -> ⭐. It will help others find the project.
+
 1. **Fork the Repository**: Click the "Fork" button at the top right corner of this repository to create your own copy.
 
 2. **Clone Your Fork**: Clone your forked repository to your local machine:
