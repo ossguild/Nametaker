@@ -2,6 +2,9 @@
 
 If you're new to GitHub and open source, you're in the right place! This repository is designed to help you get started with your open source journey. You'll learn how to make your first contribution by adding your name and a small piece of information about yourself to a tiny file.
 
+<img width="1024" alt="bg-readme" src="https://github.com/ossguild/Nametaker/assets/66284362/d6ae7a30-1e9b-4aa3-8bd9-b7a2710a84ae">
+
+
 ## Getting Started
 
 ### Prerequisites
