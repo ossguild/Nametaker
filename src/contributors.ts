@@ -12,6 +12,12 @@ const contributors: Contributor[] = [
     emoji: '♒️',
     favoriteQuote: 'Open source is open to all',
     twitterUrl: 'https://twitter.com/danielolabemiwo',
+  },
+  {
+    name: 'Abdussalam Mustapha',
+    emoji: '😁',
+    favoriteQuote: 'exploring the world of open source',
+    twitterUrl: 'https://twitter.com/mave_da_dev',
   }
 ];
 
