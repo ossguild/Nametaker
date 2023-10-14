@@ -1,6 +1,6 @@
 # Welcome to the Open Source Beginners Repository
 
-If you're new to GitHub and open source, you're in the right place! This repository is designed to help you get started with your open source journey. You'll learn how to make your first contribution by adding your name and a small piece of information about yourself to a JSON file.
+If you're new to GitHub and open source, you're in the right place! This repository is designed to help you get started with your open source journey. You'll learn how to make your first contribution by adding your name and a small piece of information about yourself to a tiny file.
 
 ## Getting Started
 
@@ -22,19 +22,21 @@ Before you begin, make sure you have the following:
    git clone https://github.com/ossguild/Nametaker.git
 
    ```
-3. **Edit `contributors.json`**: Open the `contributors.json` file and add your name and a brief description about yourself in the following format:
+3. **Edit `contributors.js`**: Open the `contributors.js` file and add your name and a brief description about yourself in the following format:
 
-```json
+```js
 {
-  "name": "Your Name",
-  "intro": "A brief introduction about yourself."
-}
+  name: 'Joshua Omobola',
+  emoji: '🌵',
+  favoriteQuote: 'I believe in unicorns',
+  twitterUrl: 'https://twitter.com/kohawithstuff',
+},
 ```
 4. **Commit Your Changes**: Save your changes, commit them, and push to your GitHub repository:
 ```bash
-git add contributors.json
-git commit -m "Add [Your Name] to contributors"
-git push origin master
+git add *
+git commit -m "feat: Add [Your Name] to contributors"
+git push origin main
 ```
 
 5. **Create a Pull Request**: Go back to the original repository on GitHub. You should see a notification prompting you to create a pull request. Click it, and submit your changes.
