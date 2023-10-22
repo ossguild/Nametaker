@@ -2,7 +2,6 @@ import './style.css';
 import contributors from './contributors.ts';
 import JSConfetti from 'js-confetti'
 
-const jsConfetti = new JSConfetti()
 
 let contributorsCards = '';
 function extractTwitterUsername(url: string): string | null {
@@ -34,13 +33,15 @@ contributors.forEach((contributor) => {
 
 console.log(contributorsCards)
 
-document.querySelector<HTMLDivElement>(
-  '#contributor-card-wrapper'
-)!.innerHTML = contributorsCards;
-
 
 document.addEventListener("DOMContentLoaded", function () {
+  const jsConfetti = new JSConfetti()
   jsConfetti.addConfetti({
     emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
  })
+
+
+ document.querySelector<HTMLDivElement>(
+  '#contributor-card-wrapper'
+)!.innerHTML = contributorsCards;
 });
