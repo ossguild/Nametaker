@@ -25,6 +25,12 @@ const contributors: Contributor[] = [
     favoriteQuote: "exploring the world of open source",
     twitterUrl: "https://twitter.com/mave_da_dev",
   },
+  {
+    name: "Taiwo Shonibare",
+    emoji: "😎",
+    favoriteQuote: "Be good",
+    twitterUrl: "https://twitter.com/Shontysonart",
+  },
 ];
 
 export default contributors;
