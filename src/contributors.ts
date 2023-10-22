@@ -31,6 +31,12 @@ const contributors: Contributor[] = [
     favoriteQuote: "Be good",
     twitterUrl: "https://twitter.com/Shontysonart",
   },
+  {
+    name: "Hariz Adebayo",
+    emoji: "😎",
+    favoriteQuote: "May Open Souce Open Doors",
+    twitterUrl: "https://twitter.com/Hariz_TheGreat",
+  },
 ];
 
 export default contributors;
