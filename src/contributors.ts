@@ -31,6 +31,12 @@ const contributors: Contributor[] = [
     favoriteQuote: "Be good",
     twitterUrl: "https://twitter.com/Shontysonart",
   },
+  {
+    name: "Hussein Dayo Alamutu",
+    emoji: "🌵",
+    favoriteQuote: "To succeed as a software engineer, you need to be passionate about engineering software",
+    twitterUrl: "https://twitter.com/husseinalamz",
+  },
 ];
 
 export default contributors;
