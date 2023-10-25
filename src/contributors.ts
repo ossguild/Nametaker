@@ -38,6 +38,13 @@ const contributors: Contributor[] = [
     twitterUrl: "https://twitter.com/Shontysonart",
   },
   {
+
+    name: "Hussein Dayo Alamutu",
+    emoji: "🌵",
+    favoriteQuote: "To succeed as a software engineer, you need to be passionate about engineering software",
+    twitterUrl: "https://twitter.com/husseinalamz",
+  },
+  {
     name: "Ahmad Aroyehun",
     emoji: "🌝",
     favoriteQuote: "Na who give up, fuck up",
