@@ -38,6 +38,12 @@ const contributors: Contributor[] = [
     twitterUrl: "https://twitter.com/Shontysonart",
   },
   {
+    name: "Ahmad Aroyehun",
+    emoji: "🌝",
+    favoriteQuote: "Na who give up, fuck up",
+    twitterUrl: "https://twitter.com/ahm_aroy",
+ },
+  {
     name: "Hariz Adebayo",
     emoji: "😎",
     favoriteQuote: "May Open Souce Open Doors",
