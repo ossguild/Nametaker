@@ -14,6 +14,12 @@ const contributors: Contributor[] = [
     twitterUrl: "https://twitter.com/danielolabemiwo",
   },
   {
+    name: "Hardik Sharma",
+    emoji: "😊",
+    favoriteQuote: "Frontned is the what Matter and Appeals to eyes",
+    twitterUrl: "https://twitter.com/HardikS17875575",
+  },
+  {
     name: "Ibrahim Abdulraheem",
     emoji: "👩‍💻",
     favoriteQuote: "Backend is king",
@@ -32,10 +38,23 @@ const contributors: Contributor[] = [
     twitterUrl: "https://twitter.com/Shontysonart",
   },
   {
+
     name: "Hussein Dayo Alamutu",
     emoji: "🌵",
     favoriteQuote: "To succeed as a software engineer, you need to be passionate about engineering software",
     twitterUrl: "https://twitter.com/husseinalamz",
+  },
+  {
+    name: "Ahmad Aroyehun",
+    emoji: "🌝",
+    favoriteQuote: "Na who give up, fuck up",
+    twitterUrl: "https://twitter.com/ahm_aroy",
+ },
+  {
+    name: "Hariz Adebayo",
+    emoji: "😎",
+    favoriteQuote: "May Open Souce Open Doors",
+    twitterUrl: "https://twitter.com/Hariz_TheGreat",
   },
 ];
 
