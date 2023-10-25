@@ -14,6 +14,12 @@ const contributors: Contributor[] = [
     twitterUrl: "https://twitter.com/danielolabemiwo",
   },
   {
+    name: "Hardik Sharma",
+    emoji: "😊",
+    favoriteQuote: "Frontned is the what Matter and Appeals to eyes",
+    twitterUrl: "https://twitter.com/HardikS17875575",
+  },
+  {
     name: "Ibrahim Abdulraheem",
     emoji: "👩‍💻",
     favoriteQuote: "Backend is king",
