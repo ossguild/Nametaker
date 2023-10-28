@@ -1,18 +1,9 @@
 import './style.css';
 import contributors from './contributors.ts';
+import extractTwitterUsername from './lib/extractTwitterUsername'
 import JSConfetti from 'js-confetti';
 
 let contributorsCards = '';
-export function extractTwitterUsername(url: string): string {
-  const usernameRegex = /^(https:\/\/)?twitter\.com\/([a-z_A-Z0-9]{5,})$/;
-  const match = url.trim().match(usernameRegex);
-  if (match && match.length >= 2) {
-    return match[match.length - 1];
-  } else {
-    return "No Twitter username found in the URL.";
-  }
-}
-
 document.addEventListener('DOMContentLoaded', function () {
   const jsConfetti = new JSConfetti();
   contributors.forEach((contributor) => {
@@ -25,9 +16,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h4 class="text-2xl font-bold">${contributor.name}</h4>
                 <p class="text-gray-400 w-fit">${contributor.favoriteQuote}</p>
                 <div class="text-blue-600 text-sm cursor-pointer">
-                  <a href="${
-                    contributor.twitterUrl
-                  }">tw: @${extractTwitterUsername(contributor.twitterUrl)} </a>
+                  ${
+                    extractTwitterUsername(contributor.twitterUrl) === ""
+                      ? `<p>Invalid Twitter Handle</p>`
+                      : `<a href="https://twitter.com/${extractTwitterUsername(
+                          contributor.twitterUrl
+                        )}">tw: @${extractTwitterUsername(
+                          contributor.twitterUrl
+                        )} </a>`
+                  }
                 </div>
               </div>
               </div>
