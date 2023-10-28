@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const filterByEmojiSelect = document.querySelector<HTMLSelectElement>("#filter-by-emoji");
 
-  let contributorsCards = "";
+  let contributorsCards: string;
   function renderContributors(contributors: Contributor[]) {
+    contributorsCards = "";
     contributors.forEach((contributor: Contributor) => {
       const username = extractTwitterUsername(contributor.twitterUrl);
       contributorsCards += `
