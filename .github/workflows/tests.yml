@@ -1,18 +1,29 @@
 name: Tests
 
-on: ["push", "pull_request"]
+on:
+  - push
+  - pull_request
 
 jobs:
-  build:
-    runs-on: "ubuntu-latest"
+  test:
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Node Setup
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
-          cache: "npm"
-      - name: Installing Dependancies
-        run: npm ci
-      - run: npm build --if-present
-      - run: npm test
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install
+      - run: pnpm build
+      - run: pnpm test
