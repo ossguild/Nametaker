@@ -1,0 +1,18 @@
+name: Tests
+
+on: ["push", "pull_request"]
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node Setup
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: "npm"
+      - name: Installing Dependancies
+        run: npm ci
+      - run: npm build --if-present
+      - run: npm test
