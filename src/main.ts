@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const filterByEmojiSelect = document.querySelector<HTMLSelectElement>("#filter-by-emoji");
 
-  let contributorsCards: string;
+  let contributorsCards = "";
   function renderContributors(contributors: Contributor[]) {
     contributorsCards = "";
     contributors.forEach((contributor: Contributor) => {

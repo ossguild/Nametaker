@@ -59,7 +59,7 @@ const contributors: Contributor[] = [
   {
     name: "Siddharth Biswas",
     emoji: "🗿",
-    favoriteQuote: "My native language is javascript",
+    favoriteQuote: "Why spend 5 minutes doing something, when you can waste 5 hours failing to automate it",
     twitterUrl: "https://twitter.com/atlas_dev2002",
   },
 ];
