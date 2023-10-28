@@ -33,9 +33,33 @@
           <h2 class="text-7xl font-bold text-center">Contributors</h2>
           <span></span>
         </div>
+        <!-- New Search and Filter Elements -->
+        <div class="text-center my-8">
+          <input type="text" id="search-contributor" placeholder="Search by name or emoji">
+          <button id="filter-contributors">Filter</button>
+          <!-- Update the dropdown select element to include the additional emojis -->
+          <select id="filter-by-emoji">
+            <option value="">Select Emoji</option>
+            <option value="🌈">🌈 Rainbow</option>
+            <option value="⚡️">⚡️ Lightning</option>
+            <option value="🌵">🌵 Cactus</option>
+            <option value="😎">😎 Sunglasses</option>
+            <option value="🌝">🌝 Full Moon Face</option>
+            <option value="😁">😁 Grinning Face with Smiling Eyes</option>
+            <option value="👩‍💻">👩‍💻 Woman Technologist</option>
+            <option value="😊">😊 Smiling Face with Smiling Eyes</option>
+            <option value="♒️">♒️ Aquarius</option>
+            <option value="🗿">🗿 Stoned</option>
+            <!-- Add more emoji options as needed -->
+          </select>
+        
+        </div>
+        <!-- Add a dropdown select element to your HTML -->
+
         <!-- Contributors Card wrapper-->
         <div id="contributor-card-wrapper" class="gap-6 max-w-screen-2xl mx-auto mt-24 flex flex-col md:flex-row flex-wrap"></div>
       </section>
+
       <section>
         <footer class="bg-black h-20 w-full text-white flex items-center justify-center">
           <div class="relative flex overflow-x-hidden">
