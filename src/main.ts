@@ -3,13 +3,13 @@ import contributors from './contributors.ts';
 import JSConfetti from 'js-confetti';
 
 let contributorsCards = '';
-function extractTwitterUsername(url: string): string | null {
-  const usernameRegex = /twitter\.com\/([^/]+)/;
-  const match = url.match(usernameRegex);
+export function extractTwitterUsername(url: string): string {
+  const usernameRegex = /^(https:\/\/)?twitter\.com\/([a-z_A-Z0-9]{5,})$/;
+  const match = url.trim().match(usernameRegex);
   if (match && match.length >= 2) {
-    return match[1];
+    return match[match.length - 1];
   } else {
-    return 'No Twitter username found in the URL.';
+    return "No Twitter username found in the URL.";
   }
 }
 
