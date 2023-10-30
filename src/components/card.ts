@@ -12,16 +12,20 @@ const contributorCard = (contributor: Contributor) => {
   );
   const cardElement = document.createElement("div");
   cardElement.innerHTML = `
-  <div class="${styles.card} bg-neutral-200 hover:shadow-lg flex w-max px-5 pr-10 py-6 items-center justify-start gap-4 rounded-xl transition">
+  <div class="${
+    styles.card
+  } bg-neutral-200 hover:shadow-lg flex w-max px-5 pr-10 py-6 items-center justify-start gap-4 rounded-xl transition">
     <div class="rounded-full bg-blend-overlay overflow-clip z-50 w-24 h-24 bg-[#f3f3f3] flex items-center justify-center">
-      <p class="text-5xl transition duration-300 hover:scale-125">
+      <p class="text-5xl transition duration-300 selection:bg-white hover:scale-125">
         ${contributor.emoji}
       </p>
     </div>
     <div class='${styles.glow} glow'></div>
       <div class="z-50">
-        <h4 class="text-2xl font-bold">${contributor.name}</h4>
-        <p class="quote text-gray-500 font-serif italic">
+        <h4 class="text-2xl selection:bg-neutral-600 selection:text-neutral-300 font-bold">${
+          contributor.name
+        }</h4>
+        <p class="quote text-gray-500 selection:bg-neutral-400 selection:text-neutral-200 font-serif italic">
           ${shrinkedQuote}
         </p>
         <div class="text-blue-500 hover:font-bold rounded-xl transition duration-300 w-fit px-2 mt-2 text-sm font-cascadia cursor-pointer hover:text-white hover:bg-blue-500 hover:shadow-md hover:shadow-blue-600">
