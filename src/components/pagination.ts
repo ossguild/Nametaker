@@ -26,14 +26,15 @@ export default class Pagination {
   next = () => {
     this.current = Math.min(
       this.current + CARDS_PER_PAGE,
-      Math.floor((this.contributors.length - 1) / CARDS_PER_PAGE) * CARDS_PER_PAGE
+      Math.floor((this.contributors.length - 1) / CARDS_PER_PAGE) *
+        CARDS_PER_PAGE
     );
     this.render();
   };
 
   render = () => {
     pages!.innerHTML = `<div class="p-2 font-grotesk text-neutral-600">
-      ${this.current + 1} - ${Math.min(
+      ${Math.min(this.current + 1, this.contributors.length)} - ${Math.min(
       this.current + CARDS_PER_PAGE,
       this.contributors.length
     )} / ${this.contributors.length}
