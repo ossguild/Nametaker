@@ -1,8 +1,8 @@
 import "./styles/style.css";
 import contributors from "./contributors.ts";
 import JSConfetti from "js-confetti";
-import generateContributorCards from "./card.ts";
 import { Contributor } from "../types/index.ts";
+import Pagination from "./components/pagination.ts";
 
 document.addEventListener("DOMContentLoaded", function () {
   const jsConfetti = new JSConfetti();
@@ -12,16 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const filterButton = document.querySelector<HTMLButtonElement>(
     "#filter-contributors"
   );
-  const contributorCardWrapper = document.querySelector<HTMLDivElement>(
-    "#contributor-card-wrapper"
-  );
   const filterByEmojiSelect =
     document.querySelector<HTMLSelectElement>("#filter-by-emoji");
-
+  const previousBtn = document.querySelector<HTMLButtonElement>(".previous");
+  const nextBtn = document.querySelector<HTMLButtonElement>(".next");
+  
   function renderContributors(contributors: Contributor[]) {
-    const contributorsCards = generateContributorCards(contributors);
-    contributorCardWrapper!.innerHTML = "";
-    contributorCardWrapper!.appendChild(contributorsCards);
+    const pagination = new Pagination(contributors);
+    pagination.render();
+
+    previousBtn?.addEventListener("click", pagination.previous);
+    nextBtn?.addEventListener("click", pagination.next);
   }
 
   // Event listener for the filter button

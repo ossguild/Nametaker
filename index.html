@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="app">
-      <header class="max-w-screen-2xl relative overflow-hidden w-full bg-black mx-auto rounded-3xl pt-4 pb-40">
+      <header class="max-w-screen-2xl relative overflow-hidden w-full bg-[radial-gradient(grey,black)] mx-auto pt-4 pb-40">
         <nav>
           <ul class="flex items-center justify-center text-2xl text-[#929292] gap-28 tracking-tighter">
             <li>Opensource</li>
@@ -58,6 +58,12 @@
 
         <!-- Contributors Card wrapper-->
         <div id="contributor-card-wrapper"></div>
+
+        <div class="pagination-bar flex gap-5 mx-auto w-fit h-10">
+          <button class="previous bg-neutral-300 text-neutral-600 rounded-md hover:bg-neutral-400 hover:text-black px-5 transition">Previous</button>
+          <div class="pages flex gap-2"></div>
+          <button class="next bg-neutral-300 text-neutral-600 rounded-md hover:bg-neutral-400 hover:text-black px-5 transition">Next</button>
+        </div>
       </section>
 
       <section>
