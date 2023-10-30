@@ -56,6 +56,12 @@ const contributors: Contributor[] = [
     favoriteQuote: "May Open Souce Open Doors",
     twitterUrl: "https://twitter.com/Hariz_TheGreat",
   },
+  {
+    name: "Badmus Abdulazeez",
+    emoji: "😎",
+    favoriteQuote: "Try To Be Yourself",
+    twitterUrl: "https://twitter.com/BAdekiilekun",
+  },
 ];
 
 export default contributors;
