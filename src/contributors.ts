@@ -62,6 +62,12 @@ const contributors: Contributor[] = [
     favoriteQuote: "Why spend 5 minutes doing something, when you can waste 5 hours failing to automate it",
     twitterUrl: "https://twitter.com/atlas_dev2002",
   },
+  {
+    name: "Deborah Fabusuyi",
+    emoji: "🚀",
+    favoriteQuote: "With consistency i'll make it",
+    twitterUrl: "https://twitter.com/Debbyiecodes",
+  },
 ];
 
 export default contributors;
