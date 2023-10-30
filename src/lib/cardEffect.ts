@@ -33,13 +33,13 @@ function rotateToMouse(e: MouseEvent) {
     )
   `;
 }
-
+// @ts-ignore
 export const onMouseEnter = (e: Event, cardElement: HTMLDivElement) => {
   bounds = cardElement.getBoundingClientRect();
   card = cardElement;
   cardElement.addEventListener("mousemove", rotateToMouse);
 };
-
+// @ts-ignore
 export const onMouseLeave = (e: Event, card: HTMLDivElement) => {
   card.querySelector<HTMLDivElement>(".glow")!.style.display = "none";
   card.removeEventListener("mousemove", rotateToMouse);
