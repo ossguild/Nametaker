@@ -62,6 +62,11 @@ const contributors: Contributor[] = [
     favoriteQuote: "Try To Be Yourself",
     twitterUrl: "https://twitter.com/BAdekiilekun",
   },
+    name: "Siddharth Biswas",
+    emoji: "🗿",
+    favoriteQuote: "Why spend 5 minutes doing something, when you can waste 5 hours failing to automate it",
+    twitterUrl: "https://twitter.com/atlas_dev2002",
+  }
 ];
 
 export default contributors;
