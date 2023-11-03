@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'grotesk': ['Space Grotesk', 'sans-serif']
+        'grotesk': ['Space Grotesk', 'sans-serif'],
+        'cascadia': ['Cascadia Code', 'sans-serif']
       },
       animation: {
         marquee: 'marquee 25s linear infinite',

@@ -1,44 +1,28 @@
-import "./style.css";
+import "./styles/style.css";
 import contributors from "./contributors.ts";
-import extractTwitterUsername from "./lib/extractTwitterUsername";
 import JSConfetti from "js-confetti";
 import { Contributor } from "../types/index.ts";
+import Pagination from "./components/pagination.ts";
 
 document.addEventListener("DOMContentLoaded", function () {
   const jsConfetti = new JSConfetti();
-  const searchInput = document.querySelector<HTMLInputElement>("#search-contributor");
-  const filterButton = document.querySelector<HTMLButtonElement>("#filter-contributors");
-  const contributorCardWrapper = document.querySelector<HTMLDivElement>(
-    "#contributor-card-wrapper"
+  const searchInput = document.querySelector<HTMLInputElement>(
+    "#search-contributor"
   );
-  const filterByEmojiSelect = document.querySelector<HTMLSelectElement>("#filter-by-emoji");
-
-  let contributorsCards = "";
+  const filterButton = document.querySelector<HTMLButtonElement>(
+    "#filter-contributors"
+  );
+  const filterByEmojiSelect =
+    document.querySelector<HTMLSelectElement>("#filter-by-emoji");
+  const previousBtn = document.querySelector<HTMLButtonElement>(".previous");
+  const nextBtn = document.querySelector<HTMLButtonElement>(".next");
+  
   function renderContributors(contributors: Contributor[]) {
-    contributorsCards = "";
-    contributors.forEach((contributor: Contributor) => {
-      const username = extractTwitterUsername(contributor.twitterUrl);
-      contributorsCards += `
-        <div class="bg-[#F7F7F7] flex px-5 py-6 w-fit items-center justify-start gap-4 rounded-xl grow">
-          <div class="rounded-full w-24 h-24 bg-[#f3f3f3] flex items-center justify-center">
-            <p class="text-5xl">${contributor.emoji}</p>
-          </div>
-          <div>
-            <h4 class="text-2xl font-bold">${contributor.name}</h4>
-            <p class="text-gray-400 w-fit">${contributor.favoriteQuote}</p>
-            <div class="text-blue-600 text-sm cursor-pointer">
-            ${
-              username !== ""
-                ? `<a href="https://twitter.com/${username}">tw: @${username}</a>`
-                : `<p>Broken Link</p>`
-            }
-            </div>
-          </div>
-        </div>
-      `;
-    });
+    const pagination = new Pagination(contributors);
+    pagination.render();
 
-    contributorCardWrapper!.innerHTML = contributorsCards;
+    previousBtn?.addEventListener("click", pagination.previous);
+    nextBtn?.addEventListener("click", pagination.next);
   }
 
   // Event listener for the filter button
@@ -69,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
   filterByEmojiSelect!.addEventListener("change", function () {
     const selectedEmoji = filterByEmojiSelect!.value;
     if (selectedEmoji) {
-      const filteredContributors = contributors.filter((contributor) => {
-        return contributor.emoji.includes(selectedEmoji);
-      });
+      const filteredContributors = contributors.filter(
+        (contributor) => contributor.emoji === selectedEmoji
+      );
       renderContributors(filteredContributors);
     } else {
       // Handle the case where no emoji is selected (show all contributors)
@@ -85,7 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
   jsConfetti.addConfetti({
     emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🌸"],
   });
-  document.querySelector<HTMLDivElement>(
-    "#contributor-card-wrapper"
-  )!.innerHTML = contributorsCards;
 });

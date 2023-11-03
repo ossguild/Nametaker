@@ -1,0 +1,29 @@
+.card-wrapper {
+    perspective: 2500px;
+}
+
+.card {
+    position: relative;
+
+    transition-duration: 700ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: scale3d(0 0 0 0) rotate3d(0);
+}
+
+.card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 0 20px 5px #00000044;
+}
+
+.glow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card:hover .emoji {
+    transform: scale(1.2, 1.2);
+}

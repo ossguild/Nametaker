@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import extractTwitterUsername from "../src/lib/extractTwitterUsername";
+import { extractTwitterUsername } from "../src/lib/utils";
 import contributors from "../src/contributors";
 
 describe("twitter handler validation", () => {
