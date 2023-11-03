@@ -50,6 +50,24 @@ git push origin main
 
 ***Important Note***: Do not make any changes to the index.html file in this repository. This file is here as a part of the project and should remain untouched by contributors.
 
+### Run the Website Locally: To view your contributions locally:
+
+* **Install Node.js**: If you don't have Node.js and npm installed, download it [here](https://nodejs.org/en). If you using Linux, from your terminal, run
+```bash
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+```
+* **Install project dependencies**: In your project directory, from your terminal, run:
+```bash
+npm install
+```
+* **Start the development server**:
+```bash
+npm run dev
+```
+Open your web browser and visit http://localhost:5173 to see your contributions in action.
+
 ## Learning Resources:
 
 **GitHub Learning Lab**: A great resource for learning GitHub interactively.
