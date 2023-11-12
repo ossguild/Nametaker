@@ -68,6 +68,12 @@ const contributors: Contributor[] = [
     favoriteQuote: "With consistency i'll make it",
     twitterUrl: "https://twitter.com/Debbyiecodes",
   },
+  {
+    name: "Yusuf Bilal",
+    emoji: "🤩",
+    favoriteQuote: "Practice makes better, obsession makes perfect.",
+    twitterUrl: "https://twitter.com/ubah_484",
+  },
 ];
 
 export default contributors;
