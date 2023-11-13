@@ -73,6 +73,12 @@ const contributors: Contributor[] = [
     emoji: "💀",
     favoriteQuote: "Nothing worth having comes easy",
     twitterUrl: "https://twitter.com/yunusabdul38",
+},
+  {
+    name: "Yusuf Bilal",
+    emoji: "🤩",
+    favoriteQuote: "Practice makes better, obsession makes perfect.",
+    twitterUrl: "https://twitter.com/ubah_484",
   },
 ];
 
