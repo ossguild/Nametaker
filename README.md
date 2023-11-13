@@ -27,7 +27,7 @@ Before you begin, make sure you have the following:
    git clone https://github.com/ossguild/Nametaker.git
 
    ```
-3. **Edit `contributors.js`**: Open the `contributors.js` file and add your name and a brief description about yourself in the following format:
+3. **Edit `contributors.ts`**: Open the `contributors.ts` file and add your name and a brief description about yourself in the following format:
 
 ```js
 {
