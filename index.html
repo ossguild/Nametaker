@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,9 +8,13 @@
   </head>
   <body>
     <div id="app">
-      <header class="max-w-screen-2xl relative overflow-hidden w-full bg-[radial-gradient(grey,black)] mx-auto pt-4 pb-40">
+      <header
+        class="max-w-screen-2xl relative overflow-hidden w-full bg-[radial-gradient(grey,black)] mx-auto pt-4 pb-40"
+      >
         <nav>
-          <ul class="flex items-center justify-center text-2xl text-[#929292] gap-28 tracking-tighter">
+          <ul
+            class="flex items-center justify-center text-2xl text-[#929292] gap-28 tracking-tighter"
+          >
             <li>Opensource</li>
             <li>Opensource</li>
             <li class="text-white text-4xl">Nametaker</li>
@@ -19,12 +23,24 @@
           </ul>
         </nav>
         <div class="text-center text-white mt-20">
-          <h1 class="text-8xl tracking-tighter font-bold leading-tight">Go from Zero to One In <br /> Open Source</h1>
-          <p class="text-xl tracking-tighter mx-auto text-[#f9f9f9] mt-8">The best way to contribute to open source is to contribute</p>
-          <button class="text-xl font-bold tracking-tight px-5 py-4 rounded-xl mt-11 w-fit bg-[#4eb73d]"><a href="https://github.com/ossguild/Nametaker">Get Started</a></button>
+          <h1 class="text-8xl tracking-tighter font-bold leading-tight">
+            Go from Zero to One In <br />
+            Open Source
+          </h1>
+          <p class="text-xl tracking-tighter mx-auto text-[#f9f9f9] mt-8">
+            The best way to contribute to open source is to contribute
+          </p>
+          <button
+            class="text-xl font-bold tracking-tight px-5 py-4 rounded-xl mt-11 w-fit bg-[#4eb73d]"
+          >
+            <a href="https://github.com/ossguild/Nametaker">Get Started</a>
+          </button>
         </div>
         <div class="absolute -bottom-20">
-          <img src="./images/hacktoberfest-bg.png" alt="Machines for hacktoberfest">
+          <img
+            src="./images/hacktoberfest-bg.png"
+            alt="Machines for hacktoberfest"
+          />
         </div>
       </header>
       <section class="pt-16 mx-auto pb-72">
@@ -35,24 +51,17 @@
         </div>
         <!-- New Search and Filter Elements -->
         <div class="text-center my-8">
-          <input type="text" id="search-contributor" placeholder="Search by name or emoji">
+          <input
+            type="text"
+            id="search-contributor"
+            placeholder="Search by name or emoji"
+            class="p-1 bg-slate-300 text-black placeholder:text-black rounded-md"
+          />
           <button id="filter-contributors">Filter</button>
           <!-- Update the dropdown select element to include the additional emojis -->
-          <select id="filter-by-emoji">
-            <option value="">Select Emoji</option>
-            <option value="🌈">🌈 Rainbow</option>
-            <option value="⚡️">⚡️ Lightning</option>
-            <option value="🌵">🌵 Cactus</option>
-            <option value="😎">😎 Sunglasses</option>
-            <option value="🌝">🌝 Full Moon Face</option>
-            <option value="😁">😁 Grinning Face with Smiling Eyes</option>
-            <option value="👩‍💻">👩‍💻 Woman Technologist</option>
-            <option value="😊">😊 Smiling Face with Smiling Eyes</option>
-            <option value="♒️">♒️ Aquarius</option>
-            <option value="🗿">🗿 Stoned</option>
+          <select id="filter-by-emoji" class="p-1 bg-slate-300 rounded-md">
             <!-- Add more emoji options as needed -->
           </select>
-        
         </div>
         <!-- Add a dropdown select element to your HTML -->
 
@@ -60,14 +69,24 @@
         <div id="contributor-card-wrapper"></div>
 
         <div class="pagination-bar flex gap-5 mx-auto w-fit h-10">
-          <button class="previous bg-neutral-300 text-neutral-600 rounded-md hover:bg-neutral-400 hover:text-black px-5 transition">Previous</button>
+          <button
+            class="previous bg-neutral-300 text-neutral-600 rounded-md hover:bg-neutral-400 hover:text-black px-5 transition"
+          >
+            Previous
+          </button>
           <div class="pages flex gap-2"></div>
-          <button class="next bg-neutral-300 text-neutral-600 rounded-md hover:bg-neutral-400 hover:text-black px-5 transition">Next</button>
+          <button
+            class="next bg-neutral-300 text-neutral-600 rounded-md hover:bg-neutral-400 hover:text-black px-5 transition"
+          >
+            Next
+          </button>
         </div>
       </section>
 
       <section>
-        <footer class="bg-black h-20 w-full text-white flex items-center justify-center">
+        <footer
+          class="bg-black h-20 w-full text-white flex items-center justify-center"
+        >
           <div class="relative flex overflow-x-hidden">
             <div class="animate-marquee whitespace-nowrap">
               <span class="mx-4 text-4xl">Hacktoberfest</span>
@@ -76,7 +95,9 @@
               <span class="mx-4 text-4xl">Ossguild</span>
               <span class="mx-4 text-4xl">Hacktoberfest</span>
             </div>
-            <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+            <div
+              class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap"
+            >
               <span class="mx-4 text-4xl">Hacktoberfest</span>
               <span class="mx-4 text-4xl">Ossguild</span>
               <span class="mx-4 text-4xl">Hacktoberfest</span>

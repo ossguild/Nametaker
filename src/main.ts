@@ -3,6 +3,7 @@ import contributors from "./contributors.ts";
 import JSConfetti from "js-confetti";
 import { Contributor } from "../types/index.ts";
 import Pagination from "./components/pagination.ts";
+import * as Emoji from "node-emoji";
 
 document.addEventListener("DOMContentLoaded", function () {
   const jsConfetti = new JSConfetti();
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector<HTMLSelectElement>("#filter-by-emoji");
   const previousBtn = document.querySelector<HTMLButtonElement>(".previous");
   const nextBtn = document.querySelector<HTMLButtonElement>(".next");
-  
+
   function renderContributors(contributors: Contributor[]) {
     const pagination = new Pagination(contributors);
     pagination.render();
@@ -49,6 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
     renderContributors(filteredContributors);
   });
 
+  const emojiArray = [""];
+  const seenEmojis = new Set();
+
+  for (const contributor of contributors) {
+    const emoji = contributor.emoji;
+    if (!seenEmojis.has(emoji)) {
+      emojiArray.push(emoji);
+      seenEmojis.add(emoji);
+    }
+  }
+  console.log(emojiArray);
+
+  filterByEmojiSelect!.innerHTML = emojiArray
+    .map((emoji) => {
+      return `<option value=${emoji}>${
+        emoji ? emoji + " " + Emoji.find(emoji)?.key : "Select Emoji"
+      }</option>`;
+    })
+    .join("");
+
   // Event listener for the emoji filter select element
   filterByEmojiSelect!.addEventListener("change", function () {
     const selectedEmoji = filterByEmojiSelect!.value;
@@ -68,5 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   jsConfetti.addConfetti({
     emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🌸"],
+    emojiSize: 500,
   });
 });
