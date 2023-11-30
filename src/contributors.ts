@@ -38,10 +38,10 @@ const contributors: Contributor[] = [
     twitterUrl: "https://twitter.com/Shontysonart",
   },
   {
-
     name: "Hussein Dayo Alamutu",
     emoji: "🌵",
-    favoriteQuote: "To succeed as a software engineer, you need to be passionate about engineering software",
+    favoriteQuote:
+      "To succeed as a software engineer, you need to be passionate about engineering software",
     twitterUrl: "https://twitter.com/husseinalamz",
   },
   {
@@ -49,7 +49,7 @@ const contributors: Contributor[] = [
     emoji: "🌝",
     favoriteQuote: "Na who give up, fuck up",
     twitterUrl: "https://twitter.com/ahm_aroy",
- },
+  },
   {
     name: "Hariz Adebayo",
     emoji: "😎",
@@ -59,7 +59,8 @@ const contributors: Contributor[] = [
   {
     name: "Siddharth Biswas",
     emoji: "🗿",
-    favoriteQuote: "Why spend 5 minutes doing something, when you can waste 5 hours failing to automate it",
+    favoriteQuote:
+      "Why spend 5 minutes doing something, when you can waste 5 hours failing to automate it",
     twitterUrl: "https://twitter.com/atlas_dev2002",
   },
   {
@@ -73,12 +74,18 @@ const contributors: Contributor[] = [
     emoji: "💀",
     favoriteQuote: "Nothing worth having comes easy",
     twitterUrl: "https://twitter.com/yunusabdul38",
-},
+  },
   {
     name: "Yusuf Bilal",
     emoji: "🤩",
     favoriteQuote: "Practice makes better, obsession makes perfect.",
     twitterUrl: "https://twitter.com/ubah_484",
+  },
+  {
+    name: "Hamzat Abdul-muizz",
+    emoji: "😉",
+    favoriteQuote: "If you want it so bad, go for it. Nothing good comes easy",
+    twitterUrl: "https://twitter.com/canhamzacode",
   },
 ];
 
