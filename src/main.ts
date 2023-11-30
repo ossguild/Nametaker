@@ -89,6 +89,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   jsConfetti.addConfetti({
     emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🌸"],
-    emojiSize: 500,
   });
 });
