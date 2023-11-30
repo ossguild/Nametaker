@@ -80,6 +80,12 @@ const contributors: Contributor[] = [
     favoriteQuote: "Practice makes better, obsession makes perfect.",
     twitterUrl: "https://twitter.com/ubah_484",
   },
+  {
+    name: "Badmus Abdulazeez",
+    emoji: "😎",
+    favoriteQuote: "Try To Be Yourself and Don't relent because practice make perfection.",
+    twitterUrl: "https://twitter.com/BAdekiilekun",
+  },
 ];
 
 export default contributors;
