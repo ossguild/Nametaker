@@ -80,6 +80,13 @@ const contributors: Contributor[] = [
     favoriteQuote: "Practice makes better, obsession makes perfect.",
     twitterUrl: "https://twitter.com/ubah_484",
   },
+
+  {
+    name: "Jato Priestly Njilah Njepnyu",
+    emoji: "💻",
+    favoriteQuote: "Many Hands Do a Better Job",
+    twitterUrl: "https://twitter.com/PriestlyJato",
+  },
 ];
 
 export default contributors;
