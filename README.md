@@ -72,51 +72,49 @@ Open your web browser and visit http://localhost:5173 to see your contributions 
 
 **GitHub Learning Lab**: A great resource for learning GitHub interactively.
 
-**How to Create a Pull Request on GitHub**: 
- 1.Fork the Repository: Visit the repository on GitHub that you want to contribute to and click on the "Fork" button    in the upper right corner. This creates a copy of the repository in your GitHub account.
+## How to Create a Pull Request on GitHub:
 
- 2.Clone the Repository: Once you have forked the repository, clone it to your local machine. You can do this by clicking on the "Code" button in your forked repository and copying the repository's URL. Then, open a terminal or Git Bash and run the following command:
+**1.Fork the Repository**: Visit the repository on GitHub that you want to contribute to and click on the "Fork" button    in the upper right corner. This creates a copy of the repository in your GitHub account.
+
+**2.Clone the Repository**: Once you have forked the repository, clone it to your local machine. You can do this by clicking on the "Code" button in your forked repository and copying the repository's URL. Then, open a terminal or Git Bash and run the following command:
 
 ```console
 Copy
 git clone <repository-url>
 ```
-```
 
- 3.Create a New Branch: It's a good practice to create a new branch for your changes. This keeps your changes isolated from the main branch (usually called "master" or "main"). Use the following command to create a new branch:
+**3.Create a New Branch**: It's a good practice to create a new branch for your changes. This keeps your changes isolated from the main branch (usually called "master" or "main"). Use the following command to create a new branch:
 
 ```console
 Copy
 git checkout -b <branch-name>
 ```
-```
 
- 4.Replace `<branch-name>` with a descriptive name for your branch.
+**4.Replace `<branch-name>` with a descriptive name for your branch.**
 
- 5.Make and Commit Changes: Now, make the necessary changes to the code or files in your local repository using your preferred text editor or IDE. Once you have made the changes, save them and commit the changes using the following commands:
+**5.Make and Commit Changes**: Now, make the necessary changes to the code or files in your local repository using your preferred text editor or IDE. Once you have made the changes, save them and commit the changes using the following commands:
 
 ```console
 Copy
 git add .
 git commit -m "Your commit message"
 ```
-```
 
- 6.Replace `"Your commit message"` with a brief and descriptive message explaining the changes you made.
 
- 7.Push Changes to GitHub: After committing your changes, push the branch to your forked repository on GitHub:
+**6.Replace `"Your commit message"` with a brief and descriptive message explaining the changes you made**.
+
+**7.Push Changes to GitHub**: After committing your changes, push the branch to your forked repository on GitHub:
 
 ```console
 Copy
 git push origin <branch-name>
 ```
-```
 
- 8.Create the Pull Request: Go to your forked repository on GitHub and switch to the branch you just pushed. You should see a button that says "Compare & pull request." Click on it.
+**8.Create the Pull Request**: Go to your forked repository on GitHub and switch to the branch you just pushed. You should see a button that says "Compare & pull request." Click on it.
 
- 9.Review and Submit the Pull Request: On the pull request page, review the changes you made and provide a detailed description of your changes. If everything looks good, click on the "Create pull request" button.
+**9.Review and Submit the Pull Request**: On the pull request page, review the changes you made and provide a detailed description of your changes. If everything looks good, click on the "Create pull request" button.
 
- 10.Congratulations! You have successfully created a pull request on GitHub. Your changes will be reviewed by the repository maintainers, and they may provide feedback or request additional changes before merging your pull request into the main repository.
+10.Congratulations! You have successfully created a pull request on GitHub. Your changes will be reviewed by the repository maintainers, and they may provide feedback or request additional changes before merging your pull request into the main repository.
 
 Detailed guide on creating pull requests.
 We're excited to have you on board! Happy contributing! 🚀
