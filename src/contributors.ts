@@ -85,7 +85,7 @@ const contributors: Contributor[] = [
     name: "Jato Priestly Njilah Njepnyu",
     emoji: "💻",
     favoriteQuote: "Many Hands Do a Better Job",
-    twitterUrl: "https://x.com/PriestlyJato",
+    twitterUrl: "https://twitter.com/PriestlyJato",
   },
 ];
 
